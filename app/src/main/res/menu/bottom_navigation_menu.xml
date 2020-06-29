@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/navigation_main"
+            android:icon="@drawable/icon_main"
+            android:title="Main Data"/>
+        <item
+            android:id="@+id/navigation_symptoms"
+            android:icon="@drawable/icon_symptom"
+            android:title="Symptoms" />
+        <item
+            android:id="@+id/navigation_advices"
+            android:icon="@drawable/icon_advices"
+            android:title="Advices" />
+
+</menu>

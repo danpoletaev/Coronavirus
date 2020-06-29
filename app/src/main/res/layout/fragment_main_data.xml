@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mtnload.project.coronavirus.fragments.MainDataFragment"
+    android:id="@+id/main_frame_layout">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:elevation="1dp"
+        />
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:id="@+id/main_relative_layout">
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="160dp"
+            android:background="@drawable/infused"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/infusedLayout">
+
+            <TextView
+                android:id="@+id/textConf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="TOTAL CONFIRMED"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"/>
+
+            <TextView
+                android:id="@+id/confirmed_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textConf"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:text="80.000"
+                android:textColor="@color/white"
+                android:textSize="60sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/deaths_layout"
+            android:layout_width="350dp"
+            android:layout_height="160dp"
+            android:background="@drawable/deaths"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/infusedLayout">
+
+            <TextView
+                android:id="@+id/deathsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="TOTAL DEATHS"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"/>
+
+            <TextView
+                android:id="@+id/deaths_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textConf"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:text="5.000"
+                android:textColor="@color/white"
+                android:textSize="60sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="160dp"
+            android:background="@drawable/recovered"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/deaths_layout"
+            android:id="@+id/recoveredLayout">
+
+            <TextView
+                android:id="@+id/recoveredText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="TOTAL RECOVERED"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"/>
+
+            <TextView
+                android:id="@+id/recovered_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textConf"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:gravity="center"
+                android:text="50.000"
+                android:textColor="@color/white"
+                android:textSize="60sp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/last_updated_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recoveredLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:textStyle="bold"
+            android:text="Last updated on:"
+            android:textColor="@color/white"/>
+
+
+    </RelativeLayout>
+
+</FrameLayout>
